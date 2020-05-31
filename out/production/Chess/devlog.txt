@@ -1,0 +1,27 @@
+Riley H. Grant
+DevLog - Chess v2
+
+
+May 31, 2020
+============
+I scrapped the old one. I can go back to trying to do it with MVC later, but I kind of borked it.
+The view was holding too much data. I think ideally, the model just holds the data, and maybe
+processes logic.
+
+The controller serves to get requests from the view, and pass that info along to the model.
+The view is rigged up to the controller, in this case the view is basically a 8x8 grid of
+tiles that just act as buttons. No data is stored. A click just tells the controller what
+space was clicked, and the it passes to the model to do all its proper stuff
+
+Anyways,
+
+I'm about to call it for the night. It's 12:30 in the morning. I can pretty easily implement the
+turns, I think the easiest way is to just nest an if. When a click happens, check if it
+is on a piece of the player who's turn it is. If not, then legit don't do shit. Use a break or
+something.
+
+like:
+
+if (notMyPiece()) {
+  return;
+}
