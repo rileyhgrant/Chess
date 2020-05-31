@@ -1,10 +1,13 @@
 package chessgame;
 
+import java.awt.*;
 import java.util.ArrayList;
 
 import chessgame.Pieces.Blank;
 import chessgame.Pieces.IPiece;
 import javafx.geometry.Pos;
+import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
@@ -13,27 +16,38 @@ import javafx.scene.text.Text;
 public class Tile extends StackPane {
   private ChessApplication game;
   private Text text = new Text();
+  private Canvas canvas;
+  private GraphicsContext gc;
   private IPiece piece;
   private int row;
   private int col;
   private Color color;
+
 
   public Tile(int row, int col, Color color, ChessApplication game) {
     this.row = row;
     this.col = col;
     this.color = color;
     this.game = game;
+    this.canvas = new Canvas(80, 80);
+    this.gc = canvas.getGraphicsContext2D();
+    drawShapes(gc);
     //
     Rectangle border = new Rectangle(75, 75);
     border.setFill(this.color);
     border.setStroke(Color.BLACK);
     //
     setAlignment(Pos.CENTER);
-    getChildren().addAll(border, text);
+    getChildren().addAll(border, canvas, text);
 
     setOnMouseClicked(e -> {
       this.tileGotClicked();
     });
+  }
+
+  private void drawShapes(GraphicsContext gc) {
+    gc.setFill(Color.LIGHTCORAL);
+    gc.fillOval(25, 25, 30, 30);
   }
 
   private void tileGotClicked() {
@@ -185,6 +199,28 @@ public class Tile extends StackPane {
 
   public void setPieceInTileToMoved() {
     this.piece.setToMoved();
+  }
+
+  public boolean belongsToCurrentTurn() {
+    // boolean for which turn it is
+    boolean p1TurnHuh = this.game.getP1TurnHuh();
+    // initialize boolean assuming this piece is p2
+    boolean thisIsP1 = false;
+    // do an if to check if this piece is p1
+    if (this.piece.getPlayer().getIsSmoke()) {
+      thisIsP1 = true;
+    }
+
+    // return true if its p1s turn, and p1s piece, or vice versa
+    //   false otherwise
+    return (thisIsP1 == p1TurnHuh);
+
+  }
+
+  public boolean hasBlankPiece() {
+    boolean toReturn;
+    toReturn = this.piece.drawTypeAsString().equals("blank");
+    return toReturn;
   }
 
 

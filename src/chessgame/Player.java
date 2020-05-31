@@ -24,6 +24,10 @@ public class Player implements IPlayer {
     this.capturedPieces.add(p.getPieceType());
   }
 
+  public boolean getIsSmoke() {
+    return this.isSmoke;
+  }
+
 
 
 }

@@ -7,4 +7,6 @@ public interface IPlayer {
   String returnPlayerNameString();
 
   void addCapturedPiece(IPiece p);
+
+  boolean getIsSmoke();
 }

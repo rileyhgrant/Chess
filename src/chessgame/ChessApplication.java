@@ -21,7 +21,7 @@ public class ChessApplication extends Application {
   Tile activeTile;
   Tile lastActiveTile;
   ArrayList<Tile> legalTiles = new ArrayList<Tile>();
-  boolean player1TurnHuh;
+  static boolean player1TurnHuh;
 
 
   public void run(IPlayer p1, IPlayer p2) {
@@ -33,7 +33,7 @@ public class ChessApplication extends Application {
 
   @Override
   public void start(Stage primaryStage) throws Exception {
-    this.player1TurnHuh = true;
+    ChessApplication.player1TurnHuh = true;
     primaryStage.setTitle("Chess v2");
     primaryStage.setScene(new Scene(createContent() ) );
     primaryStage.show();
@@ -135,17 +135,24 @@ public class ChessApplication extends Application {
 
 
   public void setActiveTile(Tile t) {
+    Tile active = this.activeTile;
+
+    // now there should be no clicking
+    if (!t.belongsToCurrentTurn() && !t.hasBlankPiece() && t.isFriendly(active)) {
+      return;
+    }
 
     Tile old = this.activeTile;
     // if there was already a last active piece, wipe it
     if (old != null) {
       old.setPieceInTileToInactive();
-      this.lastActiveTile = old;
+      this.lastActiveTile = active;
     }
 
     // if any of these trigger, there is already a last active because
     //     legal tiles has data in it.
-    if (this.legalTiles.contains(t) && !t.isFriendly(old)) {
+    // TODO this needs to get fucking fixed, probably need to big overhaul and make helper
+    if (this.legalTiles.contains(t) && (!t.isFriendly(active) && this.legalTiles.contains(t))) {
       // if statement to take a piece if possible
       //   takes the piece and ends the turn
       this.lastActiveTile.takePiece(t);
@@ -224,6 +231,10 @@ public class ChessApplication extends Application {
       lTile.setPieceInTileToIllegal();
     }
     this.legalTiles.clear();
+  }
+
+  public boolean getP1TurnHuh() {
+    return this.player1TurnHuh;
   }
 
 

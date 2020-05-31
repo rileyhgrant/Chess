@@ -25,3 +25,26 @@ like:
 if (notMyPiece()) {
   return;
 }
+
+Anyways, there are a few more difficult things. Currently the piece is just returning a bunch of
+gobbledy gook. Maybe the piece should return a more specific set of things, you can
+have the method for the one look into the game's static board for like, pawn taking, and adding
+to row and col for Rook's or Bishops.
+
+The generic checking for a friendly piece occupying and preventing IOB can take place in the
+place where its happenign now. easy peasy.
+
+Getting there. As ol' Musky says, if you work 80-100 hour weeks and everyone else is working
+40 hour weeks, you'll get done in less than half the time, or accomplish twice as much.
+
+I'm not doing anything quite as innovative-ey as Musky. but I can put in the work, gosh dang it.
+
+When I get back from canoeing - fresh hair cut, shave the beard. Study for 4 hours per day,
+program for 8 hours per day, and play music for 1. Rest of time, read, eat, exercise.
+
+4 + 8 + 1 = 13. Legit you have 11 other hours to fit everything else in. Count 8 for sleep,
+then you have 3 hours to read, exercise, eat, and socialize. Easy.
+
+Anyways, I'll have plenty of time to think on this canoe trip. Get Chess to a decent point tomorrow
+
+- Riley.
