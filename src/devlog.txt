@@ -2,6 +2,25 @@ Riley H. Grant
 DevLog - Chess v2
 
 
+Jul 02, 2020
+==========
+At long last I'm back to working on this. One 3 week canoe trip and one GRE study sesh later.
+
+I got graphics, need to center those a bit but in general most of the basic functionality works
+
+Todo:
+. Implement check and rules surrounding that (yikes)
+. Implement checkmate (easier once you have check)
+. Implement en passent for pawns (probably have groundwork)
+. Implement castling for King (have groundwork)
+. Implement menu at the beginning
+. flip colors, I believe that white always goes first
+. Implement score at bottom of screen
+. Implement legal move as a lil grey dot? maybe? just like chess.com
+. change path of files to be out of my downloads, make it relative so anyone can play?
+  . Really I can just use the ./bla/bla and keep it in the same directory
+
+
 May 31, 2020
 ============
 I scrapped the old one. I can go back to trying to do it with MVC later, but I kind of borked it.

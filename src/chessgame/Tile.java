@@ -13,6 +13,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 
+
 public class Tile extends StackPane {
   private ChessApplication game;
   private Text text = new Text();
@@ -31,7 +32,7 @@ public class Tile extends StackPane {
     this.game = game;
     this.canvas = new Canvas(80, 80);
     this.gc = canvas.getGraphicsContext2D();
-    drawShapes(gc);
+    //this.drawShapes(gc);
     //
     Rectangle border = new Rectangle(75, 75);
     border.setFill(this.color);
@@ -46,6 +47,12 @@ public class Tile extends StackPane {
   }
 
   private void drawShapes(GraphicsContext gc) {
+    // TODO: 2020-05-31 :
+    //    PLAN: have each type of piece store an image
+    //          just call and return the image, then you
+    //          just set the image woo
+    //this.piece.drawShape(gc);
+
     gc.setFill(Color.LIGHTCORAL);
     gc.fillOval(25, 25, 30, 30);
   }
@@ -75,6 +82,11 @@ public class Tile extends StackPane {
 
 
   protected void draw() {
+
+    if (this.piece != null) {
+      this.piece.drawPiece(this.gc);
+    }
+
     String typeText = Integer.toString(this.row)
             + ", " + Integer.toString(this.col) + "\n";
 
@@ -131,43 +143,27 @@ public class Tile extends StackPane {
   }
 
 
-  // ArrayList<Tile> getLegalMoves() {
   ArrayList<int[]> getLegalMoves() {
     ArrayList<Tile> toReturn = new ArrayList<Tile>();
 
     // handoff to piece in the tile, piece will return a list of coordinates that are legal
     ArrayList<int[]> legals = this.piece.returnLegalMoveCoords(this.row, this.col);
-
-    for (int[] aLegalCoord : legals) {
-      //TODO
-      //  x : check if any are out of bounds and squash
-      //  o : check if its another (friendly) tile and remove
-      //  o : check if its another (enemy tile) and add to kill-list
-
-      if (aLegalCoord[0] < 0 || aLegalCoord[0] > 7 || aLegalCoord[1] < 0 || aLegalCoord[1] > 7) {
-        ;
-      } else {
-        toReturn.add(this.game.getBoard()[aLegalCoord[0]][aLegalCoord[1]]);
-      }
-
-    }
-
-    //TODO
-    // we then trim this list based on if any are filled, or if any are out of bounds
-
-    // will this also be todo?
-
-    // return toReturn;
+    // return this to the ChessApplication to use more logic to trim the list there.
     return legals;
   }
+
 
   public void setPieceInTileToLegal() {
     this.piece.setLegal();
   }
 
+
+
   public void setPieceInTileToIllegal() {
     this.piece.setIllegal();
   }
+
+
 
   public void swapPiece(Tile givenTile) {
     IPiece oldPiece = givenTile.getPiece();
@@ -178,6 +174,8 @@ public class Tile extends StackPane {
 
     this.setPiece(oldPiece);
   }
+
+
 
   public void takePiece(Tile givenTile) {
     IPlayer attacker = this.piece.getPlayer();
@@ -193,6 +191,8 @@ public class Tile extends StackPane {
 
   }
 
+
+
   public boolean isFriendly(Tile that) {
     return this.piece.drawOwnerAsString().equals(that.piece.drawOwnerAsString());
   }
@@ -200,6 +200,8 @@ public class Tile extends StackPane {
   public void setPieceInTileToMoved() {
     this.piece.setToMoved();
   }
+
+
 
   public boolean belongsToCurrentTurn() {
     // boolean for which turn it is
@@ -216,6 +218,8 @@ public class Tile extends StackPane {
     return (thisIsP1 == p1TurnHuh);
 
   }
+
+
 
   public boolean hasBlankPiece() {
     boolean toReturn;

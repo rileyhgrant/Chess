@@ -28,6 +28,4 @@ public class Player implements IPlayer {
     return this.isSmoke;
   }
 
-
-
 }

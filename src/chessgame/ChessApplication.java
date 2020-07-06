@@ -22,6 +22,7 @@ public class ChessApplication extends Application {
   Tile lastActiveTile;
   ArrayList<Tile> legalTiles = new ArrayList<Tile>();
   static boolean player1TurnHuh;
+  static GameInfo footer;
 
 
   public void run(IPlayer p1, IPlayer p2) {
@@ -54,17 +55,27 @@ public class ChessApplication extends Application {
         tile.setTranslateX(j * 75 + 25);
         tile.setTranslateY(i * 75 + 25);
         this.board[i][j] = tile;
-
         // call helper to put pieces on the whole board
-
-
         //
         root.getChildren().add(tile);
       }
     }
     this.initializePieces();
     this.drawAll();
+
+    // do shit for debug text
+    GameInfo tBox = new GameInfo(this);
+    tBox.setTranslateX(26);
+    tBox.setTranslateY(650);
+    root.getChildren().add(tBox);
+    tBox.setText("please work");
+    ChessApplication.footer = tBox;
+
     return root;
+  }
+
+  public void setFooterText(String newText) {
+    ChessApplication.footer.setText(newText);
   }
 
   private void drawAll() {
@@ -134,13 +145,30 @@ public class ChessApplication extends Application {
 
 
 
+
+
+  // ======================================
+  // ==== THIS IS THE UNGODLY SHITHEAD ====
+  // ======================================
+
   public void setActiveTile(Tile t) {
     Tile active = this.activeTile;
 
-    // now there should be no clicking
-    if (!t.belongsToCurrentTurn() && !t.hasBlankPiece() && t.isFriendly(active)) {
+    // if its not one of the legal tiles
+    //   AND its blank
+    //   get it OUTTA HERE
+    if (t.hasBlankPiece() && !this.legalTiles.contains(t)) {
       return;
     }
+
+    // if it has a piece
+    //   AND its owner is not currently taking a turn
+    //   AND its not a possible killable tile
+    //   get it OUTTA HERE
+    if (!t.hasBlankPiece() && !t.belongsToCurrentTurn() && !this.legalTiles.contains(t)) {
+      return;
+    }
+
 
     Tile old = this.activeTile;
     // if there was already a last active piece, wipe it
@@ -149,16 +177,20 @@ public class ChessApplication extends Application {
       this.lastActiveTile = active;
     }
 
+
     // if any of these trigger, there is already a last active because
     //     legal tiles has data in it.
     // TODO this needs to get fucking fixed, probably need to big overhaul and make helper
-    if (this.legalTiles.contains(t) && (!t.isFriendly(active) && this.legalTiles.contains(t))) {
+
+    if ( this.legalTiles.contains(t) && (!t.isFriendly(active) )) {
       // if statement to take a piece if possible
       //   takes the piece and ends the turn
       this.lastActiveTile.takePiece(t);
       t.setPieceInTileToMoved();
       this.wipeLegalTiles();
       this.flipTurn();
+
+
     } else if (this.legalTiles.contains(t)) {
       // if statement to make a legal move
       //   makes a move, and ends the turn
@@ -166,6 +198,8 @@ public class ChessApplication extends Application {
       t.setPieceInTileToMoved();
       this.wipeLegalTiles();
       this.flipTurn();
+
+
     } else {
       // else statement, new tile selected as active, show possible legal moves
       this.wipeLegalTiles();
@@ -177,8 +211,28 @@ public class ChessApplication extends Application {
       ArrayList<Tile> newLegalTiles = this.processRawLegalCoordsToTiles(rawLegalCoords);
       this.legalTiles = newLegalTiles;
     }
+
+
     // after editing data, redraw all new data
     this.drawAll();
+
+
+    // for debug purposes
+    this.setFooterTextToActivePlayer();
+  }
+
+
+
+
+
+  private void setFooterTextToActivePlayer() {
+    String toSet;
+    if (ChessApplication.player1TurnHuh) {
+      toSet = "true, " + ChessApplication.player1.returnPlayerNameString();
+    } else {
+      toSet = "false, " + ChessApplication.player2.returnPlayerNameString();
+    }
+    this.setFooterText(toSet);
   }
 
 
@@ -213,6 +267,9 @@ public class ChessApplication extends Application {
     return toReturn;
   }
 
+  /**
+   * A method that changes the current turn to the opposing player
+   */
   private void flipTurn() {
     if (this.player1TurnHuh) {
       this.player1TurnHuh = false;
@@ -222,7 +279,7 @@ public class ChessApplication extends Application {
   }
 
 
-  public Tile[][] getBoard() {
+  public static Tile[][] getBoard() {
     return board;
   }
 

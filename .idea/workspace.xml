@@ -2,16 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e8cb930-90d4-4a0b-8228-4f355396666d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/chessgame/GameInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/ChessApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/ChessApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/IPlayer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/IPlayer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/APiece.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/APiece.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Bishop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Bishop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Blank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Blank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/IPiece.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/IPiece.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/King.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/King.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Knight.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Pawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Pawn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Queen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Queen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Rook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Rook.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Tile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/devlog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/devlog.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chessgame/ChessApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/ChessApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/IPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/IPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/APiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/APiece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/Bishop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/Blank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/Blank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/IPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/IPiece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/Rook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chessgame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/chessgame/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Tile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devlog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/devlog.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,105 +36,138 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chessgame/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chessgame/ChessApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1840">
-              <caret line="152" column="38" lean-forward="true" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/devlog.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/chessgame/Tile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2315#2316#0" expanded="true" />
-                <element signature="e#2353#2354#0" expanded="true" />
-                <element signature="e#2396#2397#0" expanded="true" />
-                <element signature="e#2424#2425#0" expanded="true" />
-                <element signature="e#2449#2450#0" expanded="true" />
-                <element signature="e#2474#2475#0" expanded="true" />
-                <element signature="e#2499#2500#0" expanded="true" />
-                <element signature="e#2524#2525#0" expanded="true" />
-                <element signature="e#2623#2624#0" expanded="true" />
-                <element signature="e#2655#2656#0" expanded="true" />
-                <element signature="e#2699#2700#0" expanded="true" />
-                <element signature="e#2733#2734#0" expanded="true" />
-                <element signature="e#3716#3717#0" expanded="true" />
-                <element signature="e#3747#3748#0" expanded="true" />
-                <element signature="e#3790#3791#0" expanded="true" />
-                <element signature="e#3823#3824#0" expanded="true" />
-                <element signature="e#4663#4664#0" expanded="true" />
-                <element signature="e#4696#4697#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chessgame/IPlayer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/APiece.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="870">
-              <caret line="73" selection-start-line="73" selection-end-line="73" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/chessgame/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5308568">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/chessgame/ChessApplication.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="201" selection-start-line="201" selection-end-line="201" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/IPiece.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/APiece.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/devlog.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" selection-start-line="9" selection-end-line="9" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/chessgame/Player.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Rook.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/King.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="140">
+                  <caret line="65" selection-start-line="65" selection-end-line="65" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Pawn.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Queen.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Blank.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="35" column="33" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="33" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#759#760#0" expanded="true" />
+                    <element signature="e#797#798#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -128,6 +177,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>drawShapes</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,48 +195,35 @@
         <option value="$PROJECT_DIR$/src/chessgame/chessApplication.java" />
         <option value="$PROJECT_DIR$/src/chessgame/Board.java" />
         <option value="$PROJECT_DIR$/src/chessgame/Pieces/PieceUtil.java" />
-        <option value="$PROJECT_DIR$/src/chessgame/Pieces/Pawn.java" />
-        <option value="$PROJECT_DIR$/src/chessgame/Pieces/Bishop.java" />
-        <option value="$PROJECT_DIR$/src/chessgame/Pieces/Blank.java" />
-        <option value="$PROJECT_DIR$/src/chessgame/Pieces/Knight.java" />
-        <option value="$PROJECT_DIR$/src/chessgame/Pieces/King.java" />
-        <option value="$PROJECT_DIR$/src/chessgame/Pieces/Queen.java" />
-        <option value="$PROJECT_DIR$/src/chessgame/Pieces/Rook.java" />
         <option value="$PROJECT_DIR$/src/chessgame/Main.java" />
-        <option value="$PROJECT_DIR$/src/chessgame/Pieces/IPiece.java" />
-        <option value="$PROJECT_DIR$/src/chessgame/Pieces/APiece.java" />
-        <option value="$PROJECT_DIR$/src/devlog.txt" />
-        <option value="$PROJECT_DIR$/src/chessgame/Player.java" />
         <option value="$PROJECT_DIR$/src/chessgame/IPlayer.java" />
+        <option value="$PROJECT_DIR$/src/chessgame/GameInfo.java" />
         <option value="$PROJECT_DIR$/src/chessgame/ChessApplication.java" />
+        <option value="$PROJECT_DIR$/src/chessgame/Pieces/IPiece.java" />
         <option value="$PROJECT_DIR$/src/chessgame/Tile.java" />
+        <option value="$PROJECT_DIR$/src/chessgame/Pieces/Blank.java" />
+        <option value="$PROJECT_DIR$/src/chessgame/Pieces/Queen.java" />
+        <option value="$PROJECT_DIR$/src/chessgame/Pieces/Pawn.java" />
+        <option value="$PROJECT_DIR$/src/chessgame/Pieces/Rook.java" />
+        <option value="$PROJECT_DIR$/src/chessgame/Pieces/Bishop.java" />
+        <option value="$PROJECT_DIR$/src/chessgame/Player.java" />
+        <option value="$PROJECT_DIR$/src/chessgame/Pieces/Knight.java" />
+        <option value="$PROJECT_DIR$/src/chessgame/Pieces/APiece.java" />
+        <option value="$PROJECT_DIR$/src/chessgame/Pieces/King.java" />
+        <option value="$PROJECT_DIR$/src/devlog.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/Chess.iml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="160" />
-    <option name="y" value="120" />
-    <option name="width" value="960" />
-    <option name="height" value="583" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -212,6 +253,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,6 +263,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -262,22 +306,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.16074313" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.17043619" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.32846716" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.32746115" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.22481751" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.31532848" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -308,13 +351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessgame/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/PieceUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -322,83 +358,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Knight.java">
+    <entry file="file://$PROJECT_DIR$/src/chessgame/IPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/King.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Queen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Rook.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Blank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/IPiece.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Pawn.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Bishop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
@@ -409,27 +372,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessgame/IPlayer.java">
+    <entry file="file://$PROJECT_DIR$/src/chessgame/GameInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+        <state relative-caret-position="180">
+          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/APiece.java">
+    <entry file="file://$PROJECT_DIR$/src/chessgame/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="-7">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessgame/Tile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessgame/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Knight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        <state relative-caret-position="102">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Bishop.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -438,8 +420,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chessgame/ChessApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1840">
-          <caret line="152" column="38" lean-forward="true" selection-start-line="152" selection-start-column="38" selection-end-line="152" selection-end-column="38" />
+        <state>
+          <caret line="201" selection-start-line="201" selection-end-line="201" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/IPiece.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/APiece.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="113" column="16" selection-start-line="113" selection-start-column="16" selection-end-line="113" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessgame/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="30" column="1" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Rook.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Pawn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Queen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/Blank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="35" column="33" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chessgame/Pieces/King.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -448,36 +512,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/devlog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/chessgame/Tile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2315#2316#0" expanded="true" />
-            <element signature="e#2353#2354#0" expanded="true" />
-            <element signature="e#2396#2397#0" expanded="true" />
-            <element signature="e#2424#2425#0" expanded="true" />
-            <element signature="e#2449#2450#0" expanded="true" />
-            <element signature="e#2474#2475#0" expanded="true" />
-            <element signature="e#2499#2500#0" expanded="true" />
-            <element signature="e#2524#2525#0" expanded="true" />
-            <element signature="e#2623#2624#0" expanded="true" />
-            <element signature="e#2655#2656#0" expanded="true" />
-            <element signature="e#2699#2700#0" expanded="true" />
-            <element signature="e#2733#2734#0" expanded="true" />
-            <element signature="e#3716#3717#0" expanded="true" />
-            <element signature="e#3747#3748#0" expanded="true" />
-            <element signature="e#3790#3791#0" expanded="true" />
-            <element signature="e#3823#3824#0" expanded="true" />
-            <element signature="e#4663#4664#0" expanded="true" />
-            <element signature="e#4696#4697#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -543,6 +579,17 @@
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">

@@ -1,11 +1,16 @@
 package chessgame.Pieces;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import chessgame.IPlayer;
+import javafx.scene.canvas.GraphicsContext;
+import javafx.scene.image.Image;
 
 public class Blank extends APiece {
   protected PieceType type;
+  protected Image sprite;
 
   public Blank(IPlayer owner) {
     super(owner);
@@ -24,5 +29,10 @@ public class Blank extends APiece {
 
     //TODO this is currently just for debug, bare bones right now
     return toReturn;
+  }
+
+  @Override
+  public void drawPiece(GraphicsContext gc) {
+    gc.clearRect(0, 0, 100, 100);
   }
 }
