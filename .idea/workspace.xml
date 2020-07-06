@@ -2,31 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e8cb930-90d4-4a0b-8228-4f355396666d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/chessgame/GameInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/ChessApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/ChessApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/APiece.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/APiece.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Bishop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Bishop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Blank.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Blank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/IPiece.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/IPiece.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/King.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/King.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Knight.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Knight.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Pawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Pawn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Queen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Queen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Rook.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Pieces/Rook.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Chess/chessgame/Tile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Chess/chessgame/Tile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/ChessApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/ChessApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/APiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/APiece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/Blank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/Blank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/IPiece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/IPiece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Pieces/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Pieces/Rook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/chessgame/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/chessgame/Tile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/devlog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/devlog.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -81,8 +56,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/devlog.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" selection-start-line="9" selection-end-line="9" />
+                <state relative-caret-position="330">
+                  <caret line="22" selection-start-line="22" selection-end-line="22" />
                 </state>
               </provider>
             </entry>
@@ -306,6 +281,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -512,8 +488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/devlog.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
